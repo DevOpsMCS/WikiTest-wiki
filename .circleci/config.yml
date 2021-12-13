@@ -20,6 +20,6 @@ workflows:
   main:
     jobs:
       - build:
-        filters:
-          branches:
-            only: main
+          filters:
+            branches:
+              only: main
