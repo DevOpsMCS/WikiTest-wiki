@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
         name: Push Wiki to Project Wiki
-        command: |
+        command:
           git config user.email "${GITHUB_EMAIL}"
           git config user.name "${GITHUB_USERNAME}"
           git remote remove origin
