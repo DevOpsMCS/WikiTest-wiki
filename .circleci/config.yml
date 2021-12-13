@@ -1,0 +1,25 @@
+version: 2.1
+description: Automatically build and push to your GitHub Repo Wiki
+
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    steps:
+      - checkout
+      - run:
+        name: Push Wiki to Project Wiki
+        command: |
+          git config user.email "${GITHUB_EMAIL}"
+          git config user.name "${GITHUB_USERNAME}"
+          git remote remove origin
+          get remote add origin https://${GITHUB_API_KEY}@github.com/DevOpsMCS/WikiTest.git > /dev/null 2>&1
+          get push origin master > /dev/null 2>&1
+
+workflows:
+  main:
+    jobs:
+      - build:
+        filters:
+          branches:
+            only: main
