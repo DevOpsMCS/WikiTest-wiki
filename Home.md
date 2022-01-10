@@ -1,5 +1,9 @@
-This should hopefully update the Wiki
+# SparkBox Pokedex
 
-I surely hope it updates the wiki otherwise I'm in a pickle
+Attempting to write a wiki that will get uploaded and change the wiki that is currently being displayed.
 
-Please for the love of RATLAB work.
+<img src="https://archives.bulbagarden.net/media/upload/2/2b/570Zorua.png" width='350' />
+
+| Projects                    |
+|-----------------------------|
+| [Another Pokemon](Pokemon2) |
